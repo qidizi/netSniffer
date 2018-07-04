@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.antest1.kcasniffer">
+    package="com.qidizi.netSniffer">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.VIBRATE" />
@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <permission
-        android:name="com.antest1.kcasniffer.contentprovider.READ_DATA"
+        android:name="com.qidizi.netSniffer.contentprovider.READ_DATA"
         android:protectionLevel="normal" />
 
     <application
@@ -29,7 +29,7 @@
         <activity android:name=".NetworkSettingActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.antest1.kcasniffer.MainActivity" />
+                android:value="com.qidizi.netSniffer.MainActivity" />
         </activity>
 
         <service android:name=".KcaDataService" />
@@ -58,10 +58,10 @@
 
         <provider
             android:name=".KcaContentProvider"
-            android:authorities="com.antest1.kcasniffer.contentprovider"
+            android:authorities="com.qidizi.netSniffer.contentprovider"
             android:exported="true"
             android:grantUriPermissions="true"
-            android:readPermission="com.antest1.kcasniffer.contentprovider.READ_DATA" />
+            android:readPermission="com.qidizi.netSniffer.contentprovider.READ_DATA" />
     </application>
 
 </manifest>

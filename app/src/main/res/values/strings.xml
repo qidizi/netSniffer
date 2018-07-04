@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">KcaSniffer</string>
-    <string name="app_vpn_name">KcaSniffer VPN</string>
+    <string name="app_name">netSniffer</string>
+    <string name="app_vpn_name">netSniffer VPN</string>
 
     <string name="action_socks5">SOCKS5</string>
 
